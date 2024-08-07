@@ -4,7 +4,7 @@ import time
 
 while True:
     print("Server listening...")
-    
+
     time.sleep(7)
 
     # Read commpipe.txt for which option was chosen by user
@@ -28,6 +28,9 @@ while True:
     if choice == "3":
         amount = negative_amounts['Amount'].mean()
         print(f"Sending average transaction amount: {amount}...")
+
+    if choice == "4": 
+        break
 
     with open('commpipe.txt', 'w') as file:
         file.write(str(amount))
