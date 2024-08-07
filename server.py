@@ -5,7 +5,7 @@ import time
 while True:
     print("Server listening...")
 
-    time.sleep(7)
+    time.sleep(8)
 
     # Read commpipe.txt for which option was chosen by user
     with open('commpipe.txt', 'r') as request_file:
@@ -30,6 +30,7 @@ while True:
         print(f"Sending average transaction amount: {amount}...")
 
     if choice == "4": 
+        time.sleep(3)
         break
 
     with open('commpipe.txt', 'w') as file:
