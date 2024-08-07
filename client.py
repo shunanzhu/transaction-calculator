@@ -52,8 +52,10 @@ while True:
         with open('commpipe.txt', 'w') as request_file:
             request_file.write(str(3))
 
-    else:
-        break
+    elif choice == "4":
+        with open('commpipe.txt', 'w') as request_file:
+            request_file.write(str(4))
+            break
 
     time.sleep(5)
 
