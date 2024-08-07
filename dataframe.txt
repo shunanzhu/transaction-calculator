@@ -1,0 +1,6 @@
+Account Name,Account Type,Date,Description,Amount,Category
+Chase,Credit,05/01/2023,ANNUAL MEMBERSHIP FEE,-95.0,Fees and Adjustments
+Chase,Credit,04/23/2023,COSTCO WHSE #1004,-83.69,Shopping
+Chase,Credit,04/19/2023,UNITED,30.08,Travel
+Chase,Credit,04/15/2023,PURPLE VINE,-21.87,Shopping
+Chase,Credit,04/14/2023,COSTCO GAS #1004,-64.22,Gas
