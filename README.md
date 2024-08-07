@@ -16,7 +16,7 @@ with open('commpipe.txt', 'w') as request_file:
 ```
 
 # Response
-The microservice will read both text files and process the dataframe from dataframe.txt according to the request message in commpipe.txt. If will then send the requested information back to the client program by writing it to commpipe.txt which the client will read from. 
+The microservice will read both text files and process the dataframe from dataframe.txt according to the request message in commpipe.txt. It will then send the requested information back to the client program by writing it to commpipe.txt which the client will read from. 
 
 See UML sequence diagram for this microservice below:
 ![image](https://github.com/user-attachments/assets/3e14c677-524a-41dc-9a07-c11f0b9bedda)
