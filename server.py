@@ -5,7 +5,7 @@ import time
 while True:
     print("Server listening...")
 
-    time.sleep(8)
+    time.sleep(2)
 
     # Read commpipe.txt for which option was chosen by user
     with open('commpipe.txt', 'r') as request_file:
@@ -21,17 +21,20 @@ while True:
         amount = negative_amounts['Amount'].min()
         print(f"Sending highest transaction amount: {amount}...")
 
-    if choice == "2":
+    elif choice == "2":
         amount = negative_amounts['Amount'].max()
         print(f"Sending lowest transaction amount: {amount}...")
 
-    if choice == "3":
+    elif choice == "3":
         amount = negative_amounts['Amount'].mean()
         print(f"Sending average transaction amount: {amount}...")
 
-    if choice == "4": 
+    elif choice == "4": 
         time.sleep(3)
         break
+
+    else:
+        continue
 
     with open('commpipe.txt', 'w') as file:
         file.write(str(amount))

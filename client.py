@@ -57,7 +57,7 @@ while True:
             request_file.write(str(4))
             break
 
-    time.sleep(10)
+    time.sleep(2)
 
     with open('commpipe.txt', 'r') as response_file:
         amount = response_file.readline()
