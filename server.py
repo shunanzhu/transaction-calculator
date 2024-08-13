@@ -2,14 +2,27 @@ import pandas as pd
 import time
 
 
+def get_request(file_name):
+    """Read the request from the specified file."""
+    with open(file_name, 'r') as request_file:
+        request = request_file.readline()
+
+    return request
+
+
+def send_response(file_name, res):
+    """Write the response to the specified file."""
+    with open(file_name, 'w') as response_file:
+        response_file.write(str(res))
+
+
 while True:
     print("Server listening...")
 
     time.sleep(8)
 
     # Read commpipe.txt for which option was chosen by user
-    with open('commpipe.txt', 'r') as request_file:
-        choice = request_file.readline()
+    choice = get_request('commpipe.txt')
 
     # Read dataframe.txt for dataframe to be processed
     df = pd.read_csv('dataframe.txt')
@@ -33,5 +46,4 @@ while True:
         time.sleep(3)
         break
 
-    with open('commpipe.txt', 'w') as file:
-        file.write(str(amount))
+    send_response('commpipe.txt', amount)
